@@ -15,20 +15,6 @@
     <header class="header">
         <div class="header__content">
             <a href="index.html" class="header__logo">Kino App</a>
-            <ul class="header__lists">
-                <li>
-                    <a href="#">Популярные</a>
-                </li>
-                <li>
-                    <a href="#">Популярные</a>
-                </li>
-                <li>
-                    <a href="#">Популярные</a>
-                </li>
-                <li>
-                    <a href="#">Популярные</a>
-                </li>
-            </ul>
             <form>
                 <input type="text" class="header__search" placeholder="Фильмы и сериалы" />
             </form>
@@ -37,7 +23,10 @@
     <main>
         <section class="movies__main">
             <h1>Популярные</h1>
+            <div class="error">
+            </div>
             <div class="container">
+
                 <ul class="movies">
 
                 </ul>
@@ -53,7 +42,7 @@
         </section>
     </main>
     <footer>
-
+        <div id="app"></div>
     </footer>
     <script src="js/main.js" type="module"></script>
 </body>
