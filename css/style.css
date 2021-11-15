@@ -78,7 +78,6 @@ body {
     transition: 0.3s;
 }
 .movie img:hover {
-    /* opacity: 0.8; */
     transform: scale(1.007);
 }
 .movie h2 {
@@ -90,7 +89,6 @@ body {
     font-size: 26px;
     text-align: center;
 }
-
 @media (max-width: 424px) {
     .header__content {
         flex-wrap: wrap;

@@ -12,12 +12,11 @@ async function getMovies() {
             },
         });
         const respData = await resp.json();
-        showMovie(respData)
-        console.log(respData);
+        showMovie(respData);
     } catch {
-        showMovieError()
+        showMovieError();
     }
-}
+};
 async function getMoviesBest() {
     try {
         const resp = await fetch(API_URL_BEST, {
@@ -30,7 +29,7 @@ async function getMoviesBest() {
         const respData = await resp.json();
         showMovieBest(respData);
     } catch {
-        console.log('Ошибка');
+
     }
 };
 export { getMovies, getMoviesBest };

@@ -15,9 +15,9 @@ function showMovie(data) {
 function showMovieError() {
     const createElementError = document.querySelector('.error');
     const movieElementError = document.createElement('div');
-    movieElementError.classList.add('error__title')
-    movieElementError.innerHTML = `<h1>Не удалось загрузить данные</h1>`
-    createElementError.appendChild(movieElementError)
+    movieElementError.classList.add('error__title');
+    movieElementError.innerHTML = `<h1>Не удалось загрузить данные</h1>`;
+    createElementError.appendChild(movieElementError);
 }
 function showMovieBest(data) {
     const createElement = document.querySelector('.movies__best');
@@ -32,5 +32,5 @@ function showMovieBest(data) {
         `;
         createElement.appendChild(movieElement);
     })
-}
+};
 export { showMovie, showMovieBest, showMovieError };
